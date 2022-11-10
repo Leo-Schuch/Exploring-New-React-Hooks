@@ -52,7 +52,7 @@ export default function Contact(){
             onSubmit={(event) => {
               if (
                 !confirm(
-                  "Please confirm you want to delete this record."
+                  "Você realmente deseja deletar?"
                 )
               ) {
                 event.preventDefault();
@@ -71,7 +71,8 @@ function Favorite({ contact }) {
   // yes, this is a `let` for later
   let favorite = contact.favorite;
   return (
-    <Form method="post">
+    <Form 
+    method="post">
       <button
         name="favorite"
         value={favorite ? "false" : "true"}
