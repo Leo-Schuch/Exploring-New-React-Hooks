@@ -16,7 +16,7 @@ export default function Root() {
   return (
     <>
       <div id="sidebar">
-        <h1>Schuch </h1>
+        <h1>Schuch</h1>
         <div>
           <Form id="search-form" role="search">
             <input
