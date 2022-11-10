@@ -1,20 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import ErrorPage from "./ErrorPage";
 import "./index.css";
-import Contact, {loader as contactLoader} from "./routes/contact";
+import Contact, { loader as contactLoader } from "./routes/contact";
 import Root, {
   loader as rootLoader,
-  action as rootAction
+  action as rootAction,
 } from "./routes/root";
-import EditContact, {action as editAction} from "./routes/edit";
-import {action as destroyAction} from './routes/destroy'
-
+import EditContact, { action as editAction } from "./routes/edit";
+import { action as destroyAction } from "./routes/destroy";
 
 const router = createBrowserRouter([
   {
@@ -33,7 +28,7 @@ const router = createBrowserRouter([
         path: "contacts/:contactId/edit",
         element: <EditContact />,
         loader: contactLoader,
-        action: editAction
+        action: editAction,
       },
       {
         path: "contacts/:contactId/destroy",
@@ -41,7 +36,6 @@ const router = createBrowserRouter([
       },
     ],
   },
-  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
