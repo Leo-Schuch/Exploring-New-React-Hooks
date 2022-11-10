@@ -25,7 +25,7 @@ export default function Root() {
             <input
               id="q"
               aria-label="Search contacts"
-              placeholder="Search"
+              placeholder="Procurar"
               type="search"
               name="q"
             />
@@ -33,7 +33,7 @@ export default function Root() {
             <div className="sr-only" aria-live="polite"></div>
           </Form>
           <Form method="post">
-            <button type="submit">New</button>
+            <button type="submit">Criar</button>
           </Form>
         </div>
         <nav>
@@ -50,7 +50,7 @@ export default function Root() {
                         {contact.first} {contact.last}
                       </>
                     ) : (
-                      <i>No Name</i>
+                      <i>Sem Nome</i>
                     )}{" "}
                     {contact.favorite && <span>★</span>}
                   </NavLink>
@@ -59,7 +59,7 @@ export default function Root() {
             </ul>
           ) : (
             <p>
-              <i>No contacts</i>
+              <i>Sem Contatos</i>
             </p>
           )}
         </nav>

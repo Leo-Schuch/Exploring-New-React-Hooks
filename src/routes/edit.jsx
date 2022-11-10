@@ -15,16 +15,16 @@ export default function EditContact() {
   return (
     <Form method="post" id="contact-form">
       <p>
-        <span>Name</span>
+        <span>Nome:</span>
         <input
-          placeholder="First"
+          placeholder="Nome"
           aria-label="First name"
           type="text"
           name="first"
           defaultValue={contact.first}
         />
         <input
-          placeholder="Last"
+          placeholder="Sobrenome"
           aria-label="Last name"
           type="text"
           name="last"
@@ -36,14 +36,14 @@ export default function EditContact() {
         <input
           type="text"
           name="twitter"
-          placeholder="@jack"
+          placeholder="@Leo"
           defaultValue={contact.twitter}
         />
       </label>
       <label>
         <span>Avatar URL</span>
         <input
-          placeholder="https://example.com/avatar.jpg"
+          placeholder="https://exemplo.com/avatar.jpg"
           aria-label="Avatar URL"
           type="text"
           name="avatar"
@@ -51,7 +51,7 @@ export default function EditContact() {
         />
       </label>
       <label>
-        <span>Notes</span>
+        <span>Observações</span>
         <textarea
           name="notes"
           defaultValue={contact.notes}
@@ -59,8 +59,8 @@ export default function EditContact() {
         />
       </label>
       <p>
-        <button type="submit">Save</button>
-        <button type="button">Cancel</button>
+        <button type="submit">Salvar</button>
+        <button type="button">Cancelar</button>
       </p>
     </Form>
   );

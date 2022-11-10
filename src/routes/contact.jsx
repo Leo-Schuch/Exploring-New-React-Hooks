@@ -24,7 +24,7 @@ export default function Contact(){
               {contact.first} {contact.last}
             </>
           ) : (
-            <i>No Name</i>
+            <i>Sem Nome</i>
           )}{" "}
           <Favorite contact={contact} />
         </h1>
@@ -44,7 +44,7 @@ export default function Contact(){
 
         <div>
           <Form action="edit">
-            <button type="submit">Edit</button>
+            <button type="submit">Editar</button>
           </Form>
           <Form
             method="post"
@@ -59,7 +59,7 @@ export default function Contact(){
               }
             }}
           >
-            <button type="submit">Delete</button>
+            <button type="submit">Deletar</button>
           </Form>
         </div>
       </div>
