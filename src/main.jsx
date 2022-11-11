@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import ErrorPage from "./ErrorPage";
 import "./index.css";
-import Contact, { loader as contactLoader } from "./routes/contact";
+import Contact, { loader as contactLoader, action as contactAction } from "./routes/contact";
 import Root, {
   loader as rootLoader,
   action as rootAction,
@@ -28,6 +28,7 @@ const router = createBrowserRouter([
         path: "contacts/:contactId",
         element: <Contact />,
         loader: contactLoader,
+        action: contactAction,
       },
       {
         path: "contacts/:contactId/edit",

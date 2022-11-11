@@ -3,7 +3,7 @@ export default function Index() {
       <p id="zero-state">
         :)
         <br />
-        Demonstração das funções do React Router{" "}
+        Schuch, aprendendo realmente React Router{" "}
         <a href="https://reactrouter.com/">
             reactrouter.com
         </a>
