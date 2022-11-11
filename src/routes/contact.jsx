@@ -78,8 +78,8 @@ function Favorite({ contact }) {
         value={favorite ? "false" : "true"}
         aria-label={
           favorite
-            ? "Remove from favorites"
-            : "Add to favorites"
+            ? "Remover dos Favoritos"
+            : "Adicionar aos Favoritos"
         }
       >
         {favorite ? "★" : "☆"}
